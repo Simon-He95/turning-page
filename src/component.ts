@@ -6,7 +6,7 @@ import type { Props } from './types'
 
 try {
   addStyle(`
-  #__turning_page__:hover>li:not(:last-child) {
+  [data-v-turning_page]:hover>li:not(:last-child) {
     transform: rotateY(-180deg);
     transition: var(--un-hover-transition) !important;
   }
@@ -27,8 +27,8 @@ export const TurningPage = defineComponent({
   setup(props) {
     preload(props.images)
     return () => h('ul', {
-      id: '__turning_page__',
-      class: 'relative w-70 h-100 list-none ma transform-preserve-3d perspective-900px hover:translate-x-150px transition-1500',
+      'data-v-turning_page': '',
+      'class': 'relative w-70 h-100 list-none ma transform-preserve-3d perspective-900px hover:translate-x-150px transition-1500',
     },
     props.images.map((src, i) => h('li', {
       key: src,
