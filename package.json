@@ -1,6 +1,6 @@
 {
   "name": "turning-page",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "pnpm@7.18.2",
   "description": "turning-page",
   "author": "Simon He",
