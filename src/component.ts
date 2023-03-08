@@ -1,6 +1,6 @@
 // @unocss-include
 import { defineComponent, h } from 'vue'
-import { addStyle } from 'lazy-js-utils'
+import { addStyle, preload } from 'lazy-js-utils'
 import type { DefineComponent, PropType } from 'vue'
 import type { Props } from './types'
 
@@ -25,6 +25,7 @@ export const TurningPage = defineComponent({
     },
   },
   setup(props) {
+    preload(props.images)
     return () => h('ul', {
       id: '__turning_page__',
       class: 'relative w-70 h-100 list-none ma transform-preserve-3d perspective-900px hover:translate-x-150px transition-1500',
