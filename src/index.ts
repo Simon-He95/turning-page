@@ -1,2 +1,2 @@
-export { component } from './component'
+export { TurningPage } from './component'
 export * from './types'

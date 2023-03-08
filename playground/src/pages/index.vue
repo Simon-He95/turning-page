@@ -10,7 +10,8 @@ const images = [
 
 <template>
   <div py4>
-    <Turning :images="images" />
+    <!-- <Turning :images="images" /> -->
+    <turning-page :images="images" />
   </div>
 </template>
 

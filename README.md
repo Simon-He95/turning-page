@@ -1,5 +1,19 @@
 ## Turning Page
-一个翻书的效果
+一个翻书的效果组件
+
+## Usage
+```
+npm i turning-page
+
+import { TurningPage } from 'turning-page'
+
+const app = createApp(App)
+
+app.component('TurningPage', TurningPage)
+
+<turning-page :images="images" />
+
+```
 
 
 ## License

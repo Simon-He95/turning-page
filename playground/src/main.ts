@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import routes from 'virtual:generated-pages'
-import { component } from '../../src'
+import { TurningPage } from '../../src'
 import App from './App.vue'
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
@@ -12,6 +12,6 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 })
-app.component('MyComponent', component)
+app.component('TurningPage', TurningPage)
 app.use(router)
 app.mount('#app')
